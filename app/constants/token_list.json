@@ -1,0 +1,126 @@
+{
+    "name": "Moraswap Default Token List",
+    "keywords": [
+      "mora",
+      "neon",
+      "erc20",
+      "dex",
+      "defi"
+    ],
+    "timestamp": "2022-10-06T15:20:13.751+03:00",
+    "tokens": [
+      {
+        "chainId": 245022926,
+        "address_spl": "",
+        "address": "0xf1041596da0499c3438e3B1Eb7b95354C6Aed1f5",
+        "decimals": 18,
+        "name": "Wrapped NEON",
+        "symbol": "WNEON",
+        "logoURI": "https://raw.githubusercontent.com/moraswap/tokens/master/blockchains/neon/assets/0xf1041596da0499c3438e3B1Eb7b95354C6Aed1f5/logo.png"
+      },
+      {
+        "chainId": 245022926,
+        "address_spl": "",
+        "address": "0x6dcDD1620Ce77B595E6490701416f6Dbf20D2f67",
+        "decimals": 18,
+        "name": "Mora",
+        "symbol": "MORA",
+        "logoURI": "https://raw.githubusercontent.com/moraswap/tokens/master/blockchains/neon/assets/0x6dcDD1620Ce77B595E6490701416f6Dbf20D2f67/logo.png"
+      },
+      {
+        "chainId": 245022926,
+        "address_spl": "",
+        "address": "0x6Ab1F83c0429A1322D7ECDFdDf54CE6D179d911f",
+        "decimals": 6,
+        "name": "MoraTest USD Coin",
+        "symbol": "mUSDC",
+        "logoURI": "https://raw.githubusercontent.com/moraswap/tokens/master/blockchains/neon/assets/0x6Ab1F83c0429A1322D7ECDFdDf54CE6D179d911f/logo.png"
+      },
+      {
+        "chainId": 245022926,
+        "address_spl": "3vxj94fSd3jrhaGAwaEKGDPEwn5Yqs81Ay5j1BcdMqSZ",
+        "address": "0xAA24A5A5E273EFAa64a960B28de6E27B87FfDFfc",
+        "decimals": 6,
+        "name": "USDT",
+        "symbol": "USDT",
+        "logoURI": "https://raw.githubusercontent.com/compound-finance/token-list/master/assets/asset_USDT.svg"
+      },
+      {
+        "chainId": 245022926,
+        "address_spl": "8QTYE7jw4oVYLqgNaks2Uu2S6VfboGcfpQ8Nvvta35Nc",
+        "address": "0x4954cd6230C19e63B7c7b131760Ef0C0c424321C",
+        "decimals": 9,
+        "name": "Dai Stablecoin (Wormhole)",
+        "symbol": "wDAI",
+        "logoURI": "https://raw.githubusercontent.com/compound-finance/token-list/master/assets/asset_DAI.svg"
+      },
+      {
+        "chainId": 245022926,
+        "address_spl": "F4DgNXqiT3zUQA7dhqN5VzEPkRcd8vtqFwpJSwEEvnz5",
+        "address": "0xC659B2633Ed725e5346396a609d8f31794d6ac50",
+        "decimals": 6,
+        "name": "USDC",
+        "symbol": "USDC",
+        "logoURI": "https://raw.githubusercontent.com/compound-finance/token-list/master/assets/asset_USDC.svg"
+      },
+      {
+        "chainId": 245022926,
+        "address_spl": "8F4V6tmyCgM4jnabiv8ohAGsLNrNWnwMrrXrY3LQwnwP",
+        "address": "0x90306D9492eB658e47A64Ef834e76c81A0242598",
+        "decimals": 6,
+        "name": "Wrapped Ethereum (Sollet)",
+        "symbol": "ETH",
+        "logoURI": "https://raw.githubusercontent.com/compound-finance/token-list/master/assets/ctoken_eth.svg"
+      },
+      {
+        "chainId": 245022926,
+        "address_spl": "AaymAPLHxVh68UJU4TkmSDZRnmebWPi8yxP5tmXv5xVU",
+        "address": "0x07A274154D79C23d5cd7ba78a243645E419CDd46",
+        "decimals": 8,
+        "name": "Wrapped BTC (Wormhole)",
+        "symbol": "wWBTC",
+        "logoURI": "https://raw.githubusercontent.com/compound-finance/token-list/master/assets/ctoken_wbtc.svg"
+      },
+      {
+        "chainId": 245022926,
+        "address_spl": "HdvHZXp5F4ZPxb5V7xG4gpBnwmbzMite85NSg3aycmhi",
+        "address": "0xAb94bD2221cAc77FEbDB0B979Eb8839Ed7dDB981",
+        "decimals": 6,
+        "name": "Wrapped Aave",
+        "symbol": "AAVE",
+        "logoURI": "https://raw.githubusercontent.com/certusone/wormhole-token-list/main/assets/AAVE_wh.png"
+      },
+      {
+        "chainId": 245022926,
+        "address_spl": "FTC9uerzkKGM2FzysdnxpPQMttkMDmjxsuiyGT5AmBnL",
+        "address": "0xcd7cD0Fe96D89aA98F1cB8f17cD31dCb6eA90D0d",
+        "decimals": 9,
+        "name": "Curve DAO Token (Wormhole)",
+        "symbol": "wCRV",
+        "logoURI": "https://raw.githubusercontent.com/certusone/wormhole-token-list/main/assets/CRV_wh.png"
+      },
+      {
+        "chainId": 245022926,
+        "address_spl": "GhFhboJyEt1iHYu6r563y3PxZQ4j8YserdF7YiCYcJUX",
+        "address": "0x74bcA1362b31d52198E102d9E5f5B9af360D6750",
+        "decimals": 6,
+        "name": "Wrapped SUSHI (Sollet)",
+        "symbol": "SUSHI",
+        "logoURI": "https://raw.githubusercontent.com/certusone/wormhole-token-list/main/assets/SUSHI_wh.png"
+      },
+      {
+        "chainId": 245022926,
+        "address_spl": "HU4jzc8c716ryzkfKYtg8PeJfYhjFmkmd3BGUh84fXqQ",
+        "address": "0x4C694ac087B2D1DFcB7e868af6C0561f070B7f6C",
+        "decimals": 9,
+        "name": "Balancer (Wormhole)",
+        "symbol": "wBAL",
+        "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png"
+      }
+    ],
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "patch": 0
+    }
+  }

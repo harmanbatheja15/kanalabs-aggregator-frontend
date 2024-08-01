@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Manrope:wght@200;300&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* @apply {
+  body {
+    background-color: #e4f2f3 !important;
+  }
+} */
+
+.buy-button {
+  border: none;
+  background: linear-gradient(180deg, rgba(245, 247, 250, 0) 0%, #00f9a9 100%);
+  border-radius: 1rem;
+  padding: 1px;
+  box-shadow: 0px 4px 4px 0px rgba(9, 13, 20, 0.12),
+    -2px -2px 4px 0px rgba(224, 224, 255, 0.02),
+    0px 1px 2px 0px rgba(9, 13, 20, 0.24), 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(56px);
+}
+.buy-button-light {
+  border: none;
+  background: linear-gradient(180deg, rgba(245, 247, 250, 0) 0%, #00f9a9 100%);
+  border-radius: 1rem;
+  padding: 1px;
+  box-shadow: 0px 4px 4px 0px rgba(9, 13, 20, 0.12),
+    -2px -2px 4px 0px rgba(224, 224, 255, 0.02),
+    0px 1px 2px 0px rgba(9, 13, 20, 0.24), 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(56px);
+}
+.buy-button-inner {
+  margin: 1px;
+  background: var(--topbar-buttons, #1d1e20);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+.buy-button-inner-light {
+  margin: 1px;
+  background: var(--topbar-buttons, #fff);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+/* Sccroll-bar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* tabs */
+.react-tabs__tab--selected.Tab_container {
+  border-bottom: white !important;
+  font-weight: 900;
+}
+
+/* sidebar */
+.side-nav {
+  transition: all 0.3s;
+}
+
+/* Toggle-switch */
+.ant-switch {
+  background-color: #000 !important;
+}
+.ant-switch-handle::before {
+  background-color: #fff !important;
+}
+.ant-switch-checked {
+  background: #2ed3b7 !important;
+}
+.ant-switch-inner-unchecked {
+  background-color: #000 !important;
+}
+/* Accordion */
+.MuiPaper-root {
+  border-radius: 1rem !important;
+  background-color: #17181a !important;
+}
+.MuiPaper-elevation {
+  border-radius: 1rem !important;
+  background-color: #17181a !important;
+}
+.MuiPaper-rounded {
+  border-radius: 1rem !important;
+  background-color: #17181a !important;
+}
+.MuiPaper-elevation1 {
+  border-radius: 1rem !important;
+  background-color: #17181a !important;
+}
+.MuiAccordion-root {
+  border-radius: 1rem !important;
+  background-color: #17181a !important;
+}
+.MuiAccordion-rounded {
+  border-radius: 1rem !important;
+  background-color: #17181a !important;
+}
+.MuiAccordion-gutters {
+  border-radius: 1rem !important;
+  background-color: #17181a !important;
+}
+
+/* Referal */
+
+.buy-button-link {
+  border: none;
+  background: linear-gradient(180deg, rgba(245, 247, 250, 0) 0%, #22ccee 100%);
+  border-radius: 1rem;
+  padding: 1px;
+  box-shadow: 0px 4px 4px 0px rgba(9, 13, 20, 0.12),
+    -2px -2px 4px 0px rgba(224, 224, 255, 0.02),
+    0px 1px 2px 0px rgba(9, 13, 20, 0.24), 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(56px);
+}
+
+/* Pagination */
+.pagination-container {
+  display: flex;
+  list-style-type: none;
+}
+.pagination-container .pagination-item {
+  padding: 0 12px;
+  height: 32px;
+  text-align: center;
+  margin: auto 4px;
+  color: rgba(255, 255, 255, 0.87);
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  letter-spacing: 0.01071em;
+  border-radius: 16px;
+  line-height: 1.43;
+  font-size: 13px;
+  min-width: 32px;
+}
+.pagination-container .pagination-item.dots:hover {
+  background-color: transparent;
+  cursor: default;
+}
+.pagination-container .pagination-item:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+}
+.pagination-container .pagination-item.selected {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.pagination-container .pagination-item .arrow::before {
+  position: relative;
+  /* top: 3pt;
+  Uncomment this to lower the icons as requested in comments*/
+  content: "";
+  /* By using an em scale, the arrows will size with the font */
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  border-right: 0.12em solid rgba(255, 255, 255, 0.87);
+  border-top: 0.12em solid rgba(255, 255, 255, 0.87);
+}
+.pagination-container .pagination-item .arrow.left {
+  transform: rotate(-135deg) translate(-50%);
+}
+.pagination-container .pagination-item .arrow.right {
+  transform: rotate(45deg);
+}
+.pagination-container .pagination-item.disabled {
+  pointer-events: none;
+}
+.pagination-container .pagination-item.disabled .arrow::before {
+  border-right: 0.12em solid rgba(255, 255, 255, 0.451);
+  border-top: 0.12em solid rgba(255, 255, 255, 0.43);
+}
+.pagination-container .pagination-item.disabled:hover {
+  background-color: transparent;
+  cursor: default;
+}
+/* scroll */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background-color: transparent !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: grey !important;
+  border-radius: 10px !important;
+}
