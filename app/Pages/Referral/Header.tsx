@@ -50,7 +50,7 @@ import Light from "../../../assets/Icons/Light.svg";
 import { useWalletKit } from "@mysten/wallet-kit";
 import ReferralDark from "../../../assets/Icons/referral_dark.svg";
 import Referral from "../../../assets/Icons/referral.svg";
-import GreenDown from '../../../assets/Icons/green-down.svg';
+import GreenDown from '../../../assets/Icons/Green-down.svg';
 import GridLight from '../../../assets/Icons/grid-light.svg';
 import CoinsGreen from '../../../assets/Icons/coins-green.svg';
 import Bell from '../../../assets/Icons/bell.svg';
