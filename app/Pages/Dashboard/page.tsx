@@ -30,6 +30,13 @@ import Tokenlight from "../../../assets/Icons/Token-light.svg";
 import subtokenlight from "../../../assets/Icons/subtoken-light.svg";
 import PopularTokens from "@/app/Component/PopularTokens";
 import LeaderBoard from "@/app/Component/Leaderboard";
+import { LuExternalLink } from 'react-icons/lu';
+import BgCoinsSwapGreen from '@/assets/Icons/bg-coins-swap-green.svg';
+import BgCoinsStackedGreen from '@/assets/Icons/bg-coins-stacked-green.svg';
+import BgCoinsHandGreen from '@/assets/Icons/bg-coins-hand-green.svg';
+import BgScalesGreen from '@/assets/Icons/bg-scales-green.svg';
+import BgBarChartGreen from '@/assets/Icons/bg-bar-chart-green.svg';
+import BgGamingPadGreen from '@/assets/Icons/bg-gaming-pad-green.svg';
 
 const Dashboard = () => {
   const [isPopupOpen, setPopupOpen] = useState(false);
@@ -72,7 +79,200 @@ const Dashboard = () => {
     setIsCheckbox(!isCheckbox);
   };
   return (
-    <div className="w-full">
+	<>
+
+	<div className='flex-1 mt-0 lg:mt-4'>
+				<div className='w-full mx-auto'>
+					<div
+						className='text-white px-4 lg:px-6 py-6 lg:rounded-2xl relative'
+						style={{
+							background: theme === 'dark' ? 'white' : 'linear-gradient(92.39deg, #000000 46.88%, #0194FF 184.51%)',
+						}}
+					>
+						<div className='mt-[41px]'>
+							<h1 className='lg:text-4xl md:text-3xl sm:text-2xl text-xl font-extrabold mb-5 dark:text-black'>
+								Check out our new product
+								<br />
+								or read our latest blog
+							</h1>
+							<button className='bg-[#2ED3B7] text-[#121926] text-xs py-2 px-4 rounded-lg mb-[53px]'>
+								Try now
+							</button>
+						</div>
+						<div className='absolute top-10 right-0'>
+							<svg
+								width='417'
+								height='233'
+								viewBox='0 0 417 233'
+								fill='none'
+								xmlns='http://www.w3.org/2000/svg'
+							>
+								<path
+									fill-rule='evenodd'
+									clip-rule='evenodd'
+									d='M235.378 51.9576C235.818 51.9299 236.203 52.0742 236.534 52.3994C236.885 52.7431 237.138 53.2666 237.138 53.9037V116.61H237.658C217.938 139.061 206.953 168.208 206.953 198.511C206.953 229.024 218.091 258.366 238.069 280.879H237.138V343.113C237.138 343.75 236.885 344.273 236.534 344.617C236.203 344.942 235.818 345.087 235.378 345.059C219.257 344.042 203.391 340.371 188.428 334.173C170.613 326.793 154.425 315.977 140.789 302.341C127.154 288.706 116.338 272.518 108.958 254.702C101.579 236.887 97.7803 217.792 97.7803 198.508C97.7803 179.225 101.579 160.13 108.958 142.314C116.338 124.499 127.154 108.311 140.789 94.6754C154.425 81.0398 170.613 70.2235 188.428 62.844C203.391 56.6461 219.257 52.9745 235.378 51.9576ZM252.106 294.352V343.113C252.106 352.48 244.417 360.627 234.436 359.997C216.671 358.877 199.189 354.831 182.7 348.001C163.069 339.869 145.231 327.951 130.206 312.925C115.18 297.9 103.261 280.062 95.1296 260.43C86.9979 240.799 82.8125 219.757 82.8125 198.508C82.8125 177.259 86.9978 156.218 95.1296 136.586C103.261 116.955 115.18 99.117 130.206 84.0915C145.231 69.0661 163.069 57.1473 182.7 49.0156C199.189 42.1859 216.671 38.14 234.436 37.0195C244.417 36.3899 252.106 44.5362 252.106 53.9037V102.671C270.817 87.4003 293.607 78.1567 317.544 76.1799C322.894 75.738 327.255 80.1321 327.255 85.501V311.522C327.255 316.891 322.894 321.285 317.544 320.843C293.607 318.866 270.817 309.622 252.106 294.352ZM252.878 122.204C269.079 105.676 289.966 95.119 312.287 91.8407V305.182C289.966 301.904 269.079 291.347 252.878 274.818C233.09 254.63 221.921 227.188 221.921 198.511C221.921 169.835 233.09 142.392 252.878 122.204Z'
+									fill='url(#paint0_linear_2527_1032)'
+								/>
+								<defs>
+									<linearGradient
+										id='paint0_linear_2527_1032'
+										x1='257.1'
+										y1='316.487'
+										x2='257.1'
+										y2='-966.271'
+										gradientUnits='userSpaceOnUse'
+									>
+										<stop
+											offset='0.0802975'
+											stop-color='#0194FF'
+											stop-opacity='0'
+										/>
+										<stop offset='1' stop-color='#00FFFF' />
+									</linearGradient>
+								</defs>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div className='w-full mx-auto mt-4'>
+					<div className='flex flex-1 flex-wrap items-center lg:justify-start justify-center [&>div]:mb-4 [&>div]:!mr-4 lg:[&>div]:!ml-0 [&>div]:!ml-4'>
+						<div className='rounded-2xl border border-[#FFFFFF1A] dark:border-[#0000001a] xxl:w-auto xl:w-auto lg:w-auto md:w-auto sm:w-full xd:w-full'>
+							<div className='bg-[#17181A] dark:bg-[#FCFDFE] pt-8 pl-[31px] pr-[115px] pb-[48px] relative rounded-t-2xl'>
+								<h1 className='text-[#777879] text-xl font-normal relative z-[1]'>
+									Try the new
+									<br />
+									Cross-chain swap
+								</h1>
+								<div className='absolute top-0 right-0'>
+									<Image
+										src={BgCoinsSwapGreen}
+										alt=''
+										className='z-[0]'
+									/>
+								</div>
+							</div>
+							<div className='flex items-center justify-between bg-[#111213] dark:bg-[#FCFDFE] py-4 px-6 rounded-b-2xl'>
+								<p className='text-[#FFFFFF] dark:text-black text-lg font-extrabold'>
+									Swap
+								</p>
+								<LuExternalLink className='cursor-pointer text-white dark:text-black' />
+							</div>
+						</div>
+						<div className='rounded-2xl border border-[#FFFFFF1A] dark:border-[#0000001a] xxl:w-auto xl:w-auto lg:w-auto md:w-auto sm:w-full xd:w-full'>
+							<div className='bg-[#17181A] dark:bg-[#FCFDFE] pt-8 pl-[31px] pr-[115px] pb-[48px] relative rounded-t-2xl'>
+								<h1 className='text-[#777879] text-xl font-normal relative z-[1]'>
+									Try the new
+									<br />
+									Cross-chain swap
+								</h1>
+								<div className='absolute top-0 right-0'>
+									<Image
+										src={BgCoinsStackedGreen}
+										alt=''
+										className='z-[0]'
+									/>
+								</div>
+							</div>
+							<div className='flex items-center justify-between bg-[#111213] dark:bg-[#FCFDFE] py-4 px-6 rounded-b-2xl'>
+								<p className='text-[#FFFFFF] dark:text-black text-lg font-extrabold'>
+									Stake
+								</p>
+								<LuExternalLink className='cursor-pointer text-white dark:text-black' />
+							</div>
+						</div>
+						<div className='rounded-2xl border border-[#FFFFFF1A] dark:border-[#0000001a] xxl:w-auto xl:w-auto lg:w-auto md:w-auto sm:w-full xd:w-full'>
+							<div className='bg-[#17181A] dark:bg-[#FCFDFE] pt-8 pl-[31px] pr-[115px] pb-[48px] relative rounded-t-2xl'>
+								<h1 className='text-[#777879] text-xl font-normal relative z-[1]'>
+									Try the new
+									<br />
+									Cross-chain swap
+								</h1>
+								<div className='absolute top-0 right-0'>
+									<Image
+										src={BgCoinsHandGreen}
+										alt=''
+										className='z-[0]'
+									/>
+								</div>
+							</div>
+							<div className='flex items-center justify-between bg-[#111213] dark:bg-[#FCFDFE] py-4 px-6 rounded-b-2xl'>
+								<p className='text-[#FFFFFF] dark:text-black text-lg font-extrabold'>
+									Yield
+								</p>
+								<LuExternalLink className='cursor-pointer text-white dark:text-black' />
+							</div>
+						</div>
+						<div className='rounded-2xl border border-[#FFFFFF1A] dark:border-[#0000001a] xxl:w-auto xl:w-auto lg:w-auto md:w-auto sm:w-full xd:w-full'>
+							<div className='bg-[#17181A] dark:bg-[#FCFDFE] pt-8 pl-[31px] pr-[115px] pb-[48px] relative rounded-t-2xl'>
+								<h1 className='text-[#777879] text-xl font-normal relative z-[1]'>
+									Try the new
+									<br />
+									Cross-chain swap
+								</h1>
+								<div className='absolute top-0 right-0'>
+									<Image
+										src={BgScalesGreen}
+										alt=''
+										className='z-[0]'
+									/>
+								</div>
+							</div>
+							<div className='flex items-center justify-between bg-[#111213] dark:bg-[#FCFDFE] py-4 px-6 rounded-b-2xl'>
+								<p className='text-[#FFFFFF] dark:text-black text-lg font-extrabold'>
+									Switch
+								</p>
+								<LuExternalLink className='cursor-pointer text-white dark:text-black' />
+							</div>
+						</div>
+						<div className='rounded-2xl border border-[#FFFFFF1A] dark:border-[#0000001a] xxl:w-auto xl:w-auto lg:w-auto md:w-auto sm:w-full xd:w-full'>
+							<div className='bg-[#17181A] dark:bg-[#FCFDFE] pt-8 pl-[31px] pr-[115px] pb-[48px] relative rounded-t-2xl'>
+								<h1 className='text-[#777879] text-xl font-normal relative z-[1]'>
+									Try the new
+									<br />
+									Cross-chain swap
+								</h1>
+								<div className='absolute top-0 right-0'>
+									<Image
+										src={BgBarChartGreen}
+										alt=''
+										className='z-[0]'
+									/>
+								</div>
+							</div>
+							<div className='flex items-center justify-between bg-[#111213] dark:bg-[#FCFDFE] py-4 px-6 rounded-b-2xl'>
+								<p className='text-[#FFFFFF] dark:text-black text-lg font-extrabold'>
+									Trade
+								</p>
+								<LuExternalLink className='cursor-pointer text-white dark:text-black' />
+							</div>
+						</div>
+						<div className='rounded-2xl border border-[#FFFFFF1A] dark:border-[#0000001a] xxl:w-auto xl:w-auto lg:w-auto md:w-auto sm:w-full xd:w-full'>
+							<div className='bg-[#17181A] dark:bg-[#FCFDFE] pt-8 pl-[31px] pr-[115px] pb-[48px] relative rounded-t-2xl'>
+								<h1 className='text-[#777879] text-xl font-normal relative z-[1]'>
+									Try the new
+									<br />
+									Cross-chain swap
+								</h1>
+								<div className='absolute top-0 right-0'>
+									<Image
+										src={BgGamingPadGreen}
+										alt=''
+										className='z-[0]'
+									/>
+								</div>
+							</div>
+							<div className='flex items-center justify-between bg-[#111213] dark:bg-[#FCFDFE] py-4 px-6 rounded-b-2xl'>
+								<p className='text-[#FFFFFF] dark:text-black text-lg font-extrabold'>
+									Play
+								</p>
+								<LuExternalLink className='cursor-pointer text-white dark:text-black' />
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>
+
+    {/* <div className="w-full">
       <div
         className={`${
           isPopularTokensClicked
@@ -401,7 +601,8 @@ const Dashboard = () => {
       {isPreferences && (
         <Preferences handleClosePrefrences={handleClosePrefrences} />
       )}
-    </div>
+    </div> */}
+	</>
   );
 };
 

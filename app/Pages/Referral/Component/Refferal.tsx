@@ -66,6 +66,7 @@ import Poster from './poster';
 // import ReferralDashboard from './ReferralDashboard';
 import Faqs from './Faqs';
 import BottomNav from './BottomNav';
+import TopHeaderBtns from './TopHeaderBtns';
 
 const Refferal = () => {
 	const router = useRouter();
@@ -371,6 +372,8 @@ const Refferal = () => {
 		<ConfigProvider theme={{ components: { Notification: toastStyle } }}>
 			{contextHolder}
 
+			<TopHeaderBtns />
+			
 			<main className='flex-1 pb-24'>
 				<div className='w-full mx-auto lg:p-0 p-2'>
 					<div

@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { Sidebar } from "@/app/Component";
 import Header from "./Header";
 import { useStore } from "@/app/store";
@@ -16,7 +16,7 @@ import Footer from "./Component/Footer";
 import ClickAwayListener from 'react-click-away-listener';
 import ChevronDownDark from "../../../assets/Icons/chevron-down-dark.svg";
 import Image from 'next/image';
-import TopHeaderBtns from './Component/TopHeaderBtns';
+import Dashboard from '../Dashboard/page';
 
 const page = () => {
 	
@@ -63,10 +63,9 @@ const page = () => {
               <ReferalConnectwallet />
 			</>
           ) : (
-            <div className=''>
-			  <TopHeaderBtns />
-              <Refferal />
-            </div>
+            <>
+              <Dashboard />
+            </>
           )}
         </div>
       </div>

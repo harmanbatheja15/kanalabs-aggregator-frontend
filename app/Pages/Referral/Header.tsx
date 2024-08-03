@@ -573,12 +573,11 @@ const Header = () => {
                   )}
                 </div>
               </div>
-              <div className="dark:bg-[#e4f2f3] dark:text-[#0C0C0D] bg-[#1D1E20] font-manrope !rounded-[2rem] text-[#777879] w-full  font-[800]  h-[3.875rem]  py-[1rem] px-[1.5rem] flex flex-row justify-between gap-[1rem] items-center  cursor-pointer ">
+              <div className="dark:bg-[#e4f2f3] dark:text-[#0C0C0D] bg-[#1D1E20] font-manrope !rounded-[2rem] text-[#777879] w-full  font-[800]  h-[3.875rem]  py-[1rem] px-[1.5rem] flex flex-row justify-between gap-[1rem] items-center  cursor-pointer" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
                 <div>Theme</div>
                 <Image
                   src={theme === "light" ? Dark : Light}
                   alt="/"
-                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                   className="cursor-pointer w-5 h-5 ml-3"
                 />
               </div>
