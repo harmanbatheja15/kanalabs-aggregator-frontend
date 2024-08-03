@@ -54,8 +54,10 @@ import GreenDown from '../../../assets/Icons/Green-down.svg';
 import GridLight from '../../../assets/Icons/grid-light.svg';
 import CoinsGreen from '../../../assets/Icons/coins-green.svg';
 import Bell from '../../../assets/Icons/bell.svg';
+import ReferalConnectwallet from './Component/ReferalConnectwallet';
 
 const Header = () => {
+  const [isConnectWalletOpen, setIsConnectWalletOpen] = useState(false);
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
@@ -130,6 +132,7 @@ const Header = () => {
     }
 
     setWalletConnected(isConnected);
+	setIsConnectWalletOpen(false);
     setWalletAddress(walletAddress);
     setWalletIcon(icon);
   }, [
@@ -255,24 +258,10 @@ const Header = () => {
 						className={`w-full overflow-y-scroll cursor-pointer absolute top-[120%] !z-[100] rounded-[0.5rem] scroll-smooth backdrop-blur-sm dark:bg-[#EFF7F8] bg-[#1D1E20]`}
 					>
 						<div
-							className={`dark:bg-[#EFF7F8] bg-[#1D1E20] hover:!bg-[#1f2122] cursor-pointer flex flex-row justify-between items-center p-[0.5rem_1rem] w-[100%]`}
+							className={`dark:bg-[#EFF7F8] dark:hover:bg-[#EFF7F8] bg-[#1D1E20] hover:bg-[#1f2122] cursor-pointer flex flex-row justify-between items-center p-[0.5rem_1rem] w-[100%]`}
 						>
-							<div className='flex py-3.5 dark:text-black text-white'>
-								Lorem ipsum dolor sit amet.
-							</div>
-						</div>
-						<div
-							className={`dark:bg-[#EFF7F8] bg-[#1D1E20] hover:!bg-[#1f2122] cursor-pointer flex flex-row justify-between items-center p-[0.5rem_1rem] w-[100%]`}
-						>
-							<div className='flex py-3.5 dark:text-black text-white'>
-								Lorem ipsum dolor sit amet.
-							</div>
-						</div>
-						<div
-							className={`dark:bg-[#EFF7F8] bg-[#1D1E20] hover:!bg-[#1f2122] cursor-pointer flex flex-row justify-between items-center p-[0.5rem_1rem] w-[100%]`}
-						>
-							<div className='flex py-3.5 dark:text-black text-white'>
-								Lorem ipsum dolor sit amet.
+							<div className='flex py-3.5 dark:text-black text-[#2ED3B7]'>
+								Season 1
 							</div>
 						</div>
 					</div>
@@ -323,11 +312,11 @@ const Header = () => {
                     </div>
                   </>
                 ) : (
-                  <div className="flex">
+                  <div className="flex flex-1 cursor-pointer" onClick={() => setIsConnectWalletOpen(isConnectWalletOpen => !isConnectWalletOpen)}>
                     <div className="flex">
                       <Image src={theme === "light" ? User : User} alt="/" />
                     </div>
-                    <div className="pl-2 text-[#2ED3B7] dark:text-[#2ED3B7] font-bold text-[0.875rem] font-manrop dark:font-manrop">
+                    <div className="pl-2 text-[#2ED3B7] dark:text-[#2ED3B7] font-[800] text-[0.875rem] font-manrop dark:font-manrop">
                       Connect wallet
                     </div>
                   </div>
@@ -601,6 +590,7 @@ const Header = () => {
 		
         {isPopupOpen && <Settings handleCloseSettings={handleCloseSettings} />}
       </div>
+	  {isConnectWalletOpen && <ReferalConnectwallet />}
     </ConfigProvider>
   );
 };
