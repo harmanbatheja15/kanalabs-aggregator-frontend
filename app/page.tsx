@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { Sidebar } from "./Component";
 import Referral from "./Pages/Referral/page";
+import Dashboard from './Pages/Dashboard/page';
 
 export default function Home() {
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
@@ -25,7 +26,7 @@ export default function Home() {
           isSidebarHidden={isSidebarHidden}
         />
       </div>
-      <Referral />
+      <Dashboard />
     </div>
   );
 }

@@ -64,7 +64,7 @@ const page = () => {
 			</>
           ) : (
             <>
-              <Dashboard />
+              <Refferal />
             </>
           )}
         </div>
