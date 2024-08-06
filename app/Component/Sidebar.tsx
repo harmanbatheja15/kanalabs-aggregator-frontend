@@ -106,7 +106,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     <div
       // onMouseEnter={handleMouseEnter}
       // onMouseLeave={handleMouseLeave}
-      className={`   bg-[#17181A] dark:bg-[#FCFDFE] !z-[2]   !font-inter   !sticky  !top-0 !bottom-0 !h-screen flex flex-col gap-4  transition-all ease-in hover:ease-out transform    duration-300  items-center justify-between  py-2  !inset-0  xxl:flex bxl:flex xl:flex sxl:flex lg:hidden md:hidden sm:hidden xd:hidden ${
+      className={`   bg-[#17181A] dark:bg-[#FCFDFE] !z-[2]   !font-inter   !sticky  !top-0 !bottom-0 !h-screen flex flex-col gap-4  transition-all ease-in hover:ease-out transform    duration-300  items-center justify-between  py-2  !inset-0  xxl:flex bxl:flex xl:flex sxl:flex lg:flex md:hidden sm:hidden xd:hidden ${
         isSidebarExpanded ? "!w-[20rem] " : "!w-[5.938rem]"
       }  
           ${isSidebarExpanded ? "  !min-w-[17rem] " : "  !min-w-[5rem] "}

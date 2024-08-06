@@ -107,7 +107,7 @@ const ImageSlider = () => {
     <>
       <div className="flex justify-center w-full items-center mx-auto lg:mt-4">
         <div className="relative w-full">
-          <div className="flex carousel overflow-hidden">
+          <div className="flex carousel overflow-hidden lg:rounded-2xl">
             <div
               ref={imageRef1}
               className="text-white px-4 lg:px-6 py-6 lg:rounded-2xl relative w-full flex-shrink-0"

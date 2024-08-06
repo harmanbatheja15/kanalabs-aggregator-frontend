@@ -19,7 +19,7 @@ export default function Home() {
   }, []);
   return (
     <div className=" dark:bg-[#e4f2f3]  bg-[#0C0C0D]  h-full font-inter flex flex-row justify-center items-start w-full ">
-      <div className=" xxl:inline bxl:inline xl:inline sxl:inline lg:hidden md:hidden sm:hidden xd:hidden  ">
+      <div className=" xxl:inline bxl:inline xl:inline sxl:inline lg:inline md:hidden sm:hidden xd:hidden  ">
         <Sidebar
           isSidebarExpanded={isSidebarExpanded}
           setIsSidebarExpanded={setIsSidebarExpanded}

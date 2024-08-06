@@ -216,12 +216,12 @@ const Header = () => {
 				</div>
                 <div onClick={handleMobileMenu} className=" flex">
                   {isMobileMenuActive ? (
-                    <Image src={wrongRed} alt="wrongRed" className=" " />
+                    <Image src={wrongRed} alt="wrongRed" className="cursor-pointer" />
                   ) : (
                     <Image
                       src={theme === "light" ? Sandwichmenu : MenuLight}
                       alt="Sandwichmenu"
-                      className="   w-[1.5rem] h-[1.5rem]"
+                      className="cursor-pointer w-[1.5rem] h-[1.5rem]"
                     />
                   )}
                 </div>
