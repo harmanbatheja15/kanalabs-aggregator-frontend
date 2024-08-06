@@ -200,7 +200,7 @@ const Header = () => {
   return (
     <ConfigProvider theme={{ components: { Notification: toastStyle } }}>
       {contextHolder}
-      <div className="   !z-[2]  xxl:w-full bxl:w-full xl:w-full sxl:w-full lg:w-full md:w-screen sm:w-screen xd:w-screen   !sticky !top-0 flex flex-col justify-start items-start !font-inter  ">
+      <div className="   !z-[100]  xxl:w-full bxl:w-full xl:w-full sxl:w-full lg:w-full md:w-screen sm:w-screen xd:w-screen   !sticky !top-0 flex flex-col justify-start items-start !font-inter  ">
         <div className="font-manrope flex justify-start items-start !font-manrope w-full  ">
           <div className="h-[6.5rem] w-full  xxl:rounded-b-[1rem] bxl:rounded-b-[1rem] xl:rounded-b-[1rem] sxl:rounded-b-[1rem] lg:rounded-b-[1rem] md:rounded-b-none sm:rounded-none xd:rounded-none dark:bg-[#FCFDFE] bg-[#111213] p-[0%_2%] flex items-center justify-start gap-[1rem] ">
             <div className="2xl:hidden xl:hidden lg:hidden md:flex sm:flex xd:flex w-full justify-between items-center">
