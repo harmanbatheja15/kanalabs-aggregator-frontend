@@ -1,7 +1,10 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import Image from "next/image";
 import { useTheme } from "next-themes";
 import Banner1 from "@/assets/Icons/banner1.png";
 import Banner2 from "@/assets/Icons/banner2.png";
+import LeftArrow from '@/assets/Icons/left-pagination.svg';
+import RightArrow from '@/assets/Icons/right-pagination.svg';
 
 const ImageSlider = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -80,6 +83,26 @@ const ImageSlider = () => {
     </div>
   );
 
+  const arrowControls = () => {
+	const arrowStyles = 'absolute bg-slate-200 w-8 h-8 rounded-full cursor-pointer top-[46%]';
+	return (
+	  <>
+		<div className={`${arrowStyles} right-0 mr-2`} onClick={() => {
+		  nextImage();
+		  pauseAutoScroll();
+		}}>
+		  <Image src={RightArrow} alt='' />
+		</div>
+		<div className={`${arrowStyles} left-0 ml-2`} onClick={() => {
+		  previousImage();
+		  pauseAutoScroll();
+		}}>
+		  <Image src={LeftArrow} alt='' />
+		</div>
+	  </>
+	);
+  }
+
   return (
     <>
       <div className="flex justify-center w-full items-center mx-auto lg:mt-4">
@@ -95,8 +118,8 @@ const ImageSlider = () => {
                     : `url(${Banner1.src}) no-repeat center center / cover, linear-gradient(92.39deg, #000000 46.88%, #0194FF 184.51%)`,
               }}
             >
-              <div className="mt-[41px]">
-                <h1 className="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-extrabold mb-5 dark:text-black">
+              <div className="mt-[41px] ml-16">
+                <h1 className="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-extrabold mb-5">
                   First fully on-chain, orderbook-based
                   <br />
                   perpetual futures platform on Aptos
@@ -116,8 +139,8 @@ const ImageSlider = () => {
                     : `url(${Banner2.src}) no-repeat center center / cover, linear-gradient(92.39deg, #000000 46.88%, #0194FF 184.51%)`,
               }}
             >
-              <div className="mt-[41px]">
-                <h1 className="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-extrabold mb-5 dark:text-black">
+              <div className="mt-[41px] ml-16">
+                <h1 className="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-extrabold mb-5">
                   Join the deal as we partner with Binance
                   <br />
                   to celebrate the Olympics
@@ -128,6 +151,7 @@ const ImageSlider = () => {
               </div>
             </div>
             {sliderControl()}
+			{arrowControls()}
           </div>
         </div>
       </div>
