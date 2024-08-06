@@ -13,46 +13,45 @@ import BgGamingPadGreen from "@/assets/Icons/bg-gaming-pad-green.svg";
 import BgCoinsStackedGreen from "@/assets/Icons/bg-coins-stacked-green.svg";
 
 const Dashboard = () => {
-  const [isPopupOpen, setPopupOpen] = useState(false);
-  const [isToken, setPopupToken] = useState(false);
-  const [isPreferences, setIsPreferences] = useState(false);
   const [isOpenDropDown, setIsOpenDropDown] = useState(false);
   const [walletDropdown, setWalletDropDown] = useState(false);
   const [isCheckbox, setIsCheckbox] = useState(false);
+  const [isPopupOpen, setPopupOpen] = useState(false);
+  const [isToken, setPopupToken] = useState(false);
+  const [isPreferences, setIsPreferences] = useState(false);
   const [isPopularTokensClicked, setIsPopularTokensClicked] = useState(false);
   const [isPreviousClicked, setIsPreviousClicked] = useState(false);
   const [isLeaderboardClicked, setIsLeaderboardClicked] = useState(false);
   const { theme } = useTheme();
-  
+
   const openPopup = () => {
     setPopupOpen(true);
   };
-  
+
   const handleCloseSettings = () => {
     setPopupOpen(false);
   };
-  
+
   const openToken = () => {
     setPopupToken(true);
   };
-  
+
   const handleCloseToken = () => {
     setPopupToken(false);
   };
-  
 
   const OpenPreferences = () => {
     setIsPreferences(true);
   };
-  
+
   const handleClosePrefrences = () => {
     setIsPreferences(false);
   };
-  
+
   const toggleDropdown = () => {
     setIsOpenDropDown(!isOpenDropDown);
   };
-  
+
   const toggleDropdownReceive = () => {
     setWalletDropDown(!walletDropdown);
   };
@@ -60,7 +59,7 @@ const Dashboard = () => {
   const handleCheckbox = () => {
     setIsCheckbox(!isCheckbox);
   };
-  
+
   return (
     <>
       <div className="w-full h-full flex flex-row justify-center items-center dark:bg-[#e4f2f3]  bg-[#0C0C0D]">
@@ -70,72 +69,90 @@ const Dashboard = () => {
             <ImageSlider />
           </div>
           <div className="w-full mx-auto mt-4">
-            <div className="flex flex-1 flex-wrap items-start lg:justify-start justify-center gap-4 sxl:mx-0 xl:mx-0 bxl:mx-0 xxl:mx-0 lg:mx-0 md:mx-4 sm:mx-4 xd:mx-4">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mx-4 lg:mx-0">
               <div className="rounded-2xl border border-[#FFFFFF1A] dark:border-[#0000001a] lg:flex-1 xxl:w-auto xl:w-auto lg:w-auto md:w-full sm:w-full xd:w-full">
-                <div className="bg-[#17181A] dark:bg-[#FCFDFE] pt-8 pl-[31px] pr-[115px] pb-[48px] relative rounded-t-2xl dark:border-b border-b-[#0000001a]">
-                  <h1 className="text-[#777879] text-lg font-normal relative z-[1]">
-                    <span className="text-[#FCFDFE] dark:text-[black] text-xl">
-                      AMM DEX Aggregator
-                    </span>
-                    <br />
-                    Seamlessly Swap Tokens Across 9 Blockchains
-                  </h1>
-                  <div className="absolute bottom-0 right-0">
-                    <Image src={BgCoinsSwapGreen} alt="" className="z-[0]" />
+                <a
+                  href="https://app.kanalabs.io/swap/"
+                  target="_blank"
+                  className="flex flex-col h-full"
+                >
+                  <div className="bg-[#17181A] dark:bg-[#FCFDFE] pt-8 pl-[31px] pr-[115px] pb-[48px] relative rounded-t-2xl dark:border-b border-b-[#0000001a] flex-grow">
+                    <h1 className="text-[#777879] text-lg font-normal relative z-[1]">
+                      <span className="text-[#FCFDFE] dark:text-[black] text-xl">
+                        AMM DEX Aggregator
+                      </span>
+                      <br />
+                      Seamlessly Swap Tokens Across 9 Blockchains
+                    </h1>
+                    <div className="absolute bottom-0 right-0">
+                      <Image src={BgCoinsSwapGreen} alt="" className="z-[0]" />
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center justify-between bg-[#111213] dark:bg-[#FCFDFE] py-4 px-6 rounded-b-2xl">
-                  <p className="text-[#FFFFFF] dark:text-black text-lg font-extrabold">
-                    Try Swaps
-                  </p>
-                  <a href="" target="_blank">
-                    <LuExternalLink className="text-white dark:text-black" />
-                  </a>
-                </div>
+                  <div className="flex items-center justify-between bg-[#111213] dark:bg-[#FCFDFE] py-4 px-6 rounded-b-2xl">
+                    <p className="text-[#FFFFFF] dark:text-black text-lg font-extrabold">
+                      Try Swaps
+                    </p>
+                    <a href="https://app.kanalabs.io/swap/" target="_blank">
+                      <LuExternalLink className="text-white dark:text-black" />
+                    </a>
+                  </div>
+                </a>
               </div>
               <div className="rounded-2xl border border-[#FFFFFF1A] dark:border-[#0000001a] lg:flex-1 xxl:w-auto xl:w-auto lg:w-auto md:w-full sm:w-full xd:w-full">
-                <div className="bg-[#17181A] dark:bg-[#FCFDFE] pt-8 pl-[31px] pr-[115px] pb-[48px] relative rounded-t-2xl dark:border-b border-b-[#0000001a]">
-                  <h1 className="text-[#777879] text-lg font-normal relative z-[1]">
-                    <span className="text-[#FCFDFE] dark:text-[black] text-xl">
-                      Kana Trade
-                    </span>
-                    <br />
-                    Your Familiar Spot Trading, Now in DeFi powered by Aptos
-                  </h1>
-                  <div className="absolute bottom-0 right-0">
-                    <Image src={BgBarChartGreen} alt="" className="z-[0]" />
+                <a
+                  href="https://tradebook.kanalabs.io/"
+                  target="_blank"
+                  className="flex flex-col h-full"
+                >
+                  <div className="bg-[#17181A] dark:bg-[#FCFDFE] pt-8 pl-[31px] pr-[115px] pb-[48px] relative rounded-t-2xl dark:border-b border-b-[#0000001a] flex-grow">
+                    <h1 className="text-[#777879] text-lg font-normal relative z-[1]">
+                      <span className="text-[#FCFDFE] dark:text-[black] text-xl">
+                        Kana Trade
+                      </span>
+                      <br />
+                      Your Familiar Spot Trading, Now in DeFi powered by Aptos
+                    </h1>
+                    <div className="absolute bottom-0 right-0">
+                      <Image src={BgBarChartGreen} alt="" className="z-[0]" />
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center justify-between bg-[#111213] dark:bg-[#FCFDFE] py-4 px-6 rounded-b-2xl">
-                  <p className="text-[#FFFFFF] dark:text-black text-lg font-extrabold">
-                    Try Kana Spot
-                  </p>
-                  <a href="" target="_blank">
-                    <LuExternalLink className="text-white dark:text-black" />
-                  </a>
-                </div>
+                  <div className="flex items-center justify-between bg-[#111213] dark:bg-[#FCFDFE] py-4 px-6 rounded-b-2xl">
+                    <p className="text-[#FFFFFF] dark:text-black text-lg font-extrabold">
+                      Try Kana Spot
+                    </p>
+                    <a href="https://tradebook.kanalabs.io/" target="_blank">
+                      <LuExternalLink className="text-white dark:text-black" />
+                    </a>
+                  </div>
+                </a>
               </div>
               <div className="rounded-2xl border border-[#FFFFFF1A] dark:border-[#0000001a] lg:flex-1 xxl:w-auto xl:w-auto lg:w-auto md:w-full sm:w-full xd:w-full">
-                <div className="bg-[#17181A] dark:bg-[#FCFDFE] pt-8 pl-[31px] pr-[115px] pb-[48px] relative rounded-t-2xl dark:border-b border-b-[#0000001a]">
-                  <h1 className="text-[#777879] text-lg font-normal relative z-[1]">
-                    <span className="text-[#FCFDFE] dark:text-[black] text-xl">
-                      OPerps | Perpetual Options
-                    </span>
-                    <br />
-                    Tokenised Crypto Perpetual Options
-                  </h1>
-                  <div className="absolute bottom-0 right-0">
-                    <Image src={BgCoinsHandGreen} alt="" className="z-[0]" />
+                <a
+                  href="https://operps.kanalabs.io/"
+                  target="_blank"
+                  className="flex flex-col h-full"
+                >
+                  <div className="bg-[#17181A] dark:bg-[#FCFDFE] pt-8 pl-[31px] pr-[115px] pb-[48px] relative rounded-t-2xl dark:border-b border-b-[#0000001a] flex-grow">
+                    <h1 className="text-[#777879] text-lg font-normal relative z-[1]">
+                      <span className="text-[#FCFDFE] dark:text-[black] text-xl">
+                        OPerps | Perpetual Options
+                      </span>
+                      <br />
+                      Tokenised Crypto Perpetual Options
+                    </h1>
+                    <div className="absolute bottom-0 right-0">
+                      <Image src={BgCoinsHandGreen} alt="" className="z-[0]" />
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center justify-between bg-[#111213] dark:bg-[#FCFDFE] py-4 px-6 rounded-b-2xl">
-                  <p className="text-[#FFFFFF] dark:text-black text-lg font-extrabold">
-                    Try OPerps
-                  </p>
-                  <a href="" target="_blank">
-                    <LuExternalLink className="text-white dark:text-black" />
-                  </a>
-                </div>
+                  <div className="flex items-center justify-between bg-[#111213] dark:bg-[#FCFDFE] py-4 px-6 rounded-b-2xl">
+                    <p className="text-[#FFFFFF] dark:text-black text-lg font-extrabold">
+                      Try OPerps
+                    </p>
+                    <a href="https://operps.kanalabs.io/" target="_blank">
+                      <LuExternalLink className="text-white dark:text-black" />
+                    </a>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
